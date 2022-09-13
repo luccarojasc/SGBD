@@ -19,3 +19,4 @@ create table Venda(
 	constraint fkPcodigo foreign key (codPeca) references Peca(Pcodigo)
 );
 
+alter table Venda add constraint ckQuant check quantidade>0
